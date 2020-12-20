@@ -63,4 +63,30 @@ The measurements I am taking is for Windspeed, Temperature, Barometric Pressure,
 
    root.mainloop()```
    
+   The following is my python code for the weather bit 
    
+   
+  ```def on_data_received():
+    global cmd
+    cmd = serial.read_line()
+    cmd = cmd.substr(0, 1)
+    basic.show_string(cmd)
+    if cmd == "T":
+        serial.write_line("Temperature: " + str(Math.idiv(weatherbit.temperature(), 100)))
+    elif cmd == "L":
+        serial.write_line("Light: " + ("" + str(input.light_level())))
+    elif cmd == "H":
+        serial.write_line(" Humidity : " + str(Math.idiv(weatherbit.humidity(), 1024)))
+    elif cmd == "P":
+        serial.write_line("Presure hPa: " + str(Math.idiv(weatherbit.pressure(), 25600)))
+    elif cmd == "W":
+        serial.write_line("Wind Speed: " + str(weatherbit.wind_speed()))
+    elif cmd == "A":
+        serial.write_line("Altitude: " + str(weatherbit.altitude()))
+    else:
+        serial.write_line("cmd: " + cmd)
+serial.on_data_received(serial.delimiters(Delimiters.NEW_LINE), on_data_received)
+
+cmd = ""
+weatherbit.start_weather_monitoring()
+weatherbit.start_wind_monitoring()```
