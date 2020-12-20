@@ -1,2 +1,2 @@
-# FINAL-PROJECT
+# Weather Station
 ### ETR 107 Final Project
