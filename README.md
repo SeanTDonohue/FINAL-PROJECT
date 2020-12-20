@@ -3,7 +3,7 @@
 #### Weatherbit
 This is a project that I thouroghly enjoyed
 
-''# Python serial interface to a micro:bit
+'''# Python serial interface to a micro:bit
 #
 import serial
 import tkinter as tk
@@ -60,4 +60,4 @@ bt_0.grid(row = 3,column = 2)
 lstatus = tk.Label(root, width= 50, text= "                 ", relief="raised")
 lstatus.grid(row = 4,column = 1,  columnspan = 2)
 
-root.mainloop()''
+root.mainloop()'''
