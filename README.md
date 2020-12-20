@@ -61,12 +61,12 @@ The measurements I am taking is for Windspeed, Temperature, Barometric Pressure,
    lstatus = tk.Label(root, width= 50, text= "                 ", relief="raised")
    lstatus.grid(row = 4,column = 1,  columnspan = 2)
 
-   root.mainloop()```
+   root.mainloop()
+   ```
    
-   The following is my python code for the weather bit 
+In order to call specifc sensors, I created a command and a math equation to convert them to metric and standard outputs depending on the sensor.  To start the weather bit monitoring you need to use the command weatherbit.start_weather_monitoring().  The following is the code I used to send the sensor data to the serial output.  
    
-   
-  ```def on_data_received():
+   ```def on_data_received():
     global cmd
     cmd = serial.read_line()
     cmd = cmd.substr(0, 1)
