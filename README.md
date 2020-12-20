@@ -3,8 +3,8 @@
 #### Weatherbit for Microbit
 This is a project that I thouroghly enjoyed.  I wanted to create a interface from my computer using tkinter and allow communication to the weather;bit extension on my microbit.
 The measurements I am taking is for Windspeed, Temperature, Barometric Pressure, Humidity, Sunlight Level, and altitude.  The following is my Python code for the serial interface to the microbit/weatherbit extension.
-
-![weatherbit](C:\Users\stimo\Downloads\Weatherbit.jpgraw=true"Weatherbit")
+ 
+![weatherbit](C:\Users\stimo\Downloads\Weatherbit.jpgraw=true?"Weatherbit")
 
    ```# Python serial interface to a micro:bit
    
