@@ -1,12 +1,13 @@
 # Weather Station
 ### ETR 107 Final Project
 #### Weatherbit for Microbit
-This is a project that I thouroghly enjoyed.  I wanted to create a interface from my computer using tkinter and allow communication to the weather;bit extension on my microbit.
+
+This is a project that I thouroghly enjoyed.  I wanted to create a interface from my computer using tkinter and allow communication to the weather:bit extension on my microbit.
 The measurements I am taking is for Windspeed, Temperature, Barometric Pressure, Humidity, Sunlight Level, and altitude.  
  
 ![Weatherbit](IMAGES/Weatherbit.jpg "Microbit with Weatherbit Extension")
 
-The following code is the Python serial interface to the microbit and weatherbit. 
+The following code is the Python tkinter buttons that will call specifc sensors from the weather:bit and output the readings. 
 
 
    ```# Python serial interface to a micro:bit
@@ -95,3 +96,8 @@ serial.on_data_received(serial.delimiters(Delimiters.NEW_LINE), on_data_received
 cmd = ""
 weatherbit.start_weather_monitoring()
 weatherbit.start_wind_monitoring()```
+
+Here are a few photos of my anemometer working from my weather:bit
+```
+
+![Anomometer(IMAGES/anomometer)
