@@ -100,4 +100,4 @@ weatherbit.start_wind_monitoring()```
 Here are a few photos of my anemometer working from my weather:bit
 ```
 
-![Anomometer(IMAGES/Anomometer.jpg)
+![Anomometer](IMAGES/Anomometer.jpg)
