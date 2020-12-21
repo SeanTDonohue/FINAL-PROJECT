@@ -69,7 +69,7 @@ The following code is the Python tkinter buttons that will call specifc sensors 
 
    root.mainloop()
    ```
-![Tkinter](IMAGES/Tkinter.jpg "Tkinter")
+![Tkinter](IMAGES/Tkinter_Weatherbit.jpg "Tkinter")
 
 
 In order to call specifc sensors, I created a command and a math equation to convert them to metric and standard outputs depending on the sensor.  To start the weather bit monitoring you need to use the command weatherbit.start_weather_monitoring().  The following is my Python code for the serial interface to the microbit/weatherbit extension.  
