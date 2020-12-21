@@ -96,8 +96,8 @@ serial.on_data_received(serial.delimiters(Delimiters.NEW_LINE), on_data_received
 cmd = ""
 weatherbit.start_weather_monitoring()
 weatherbit.start_wind_monitoring()```
-
-Here are a few photos of my anemometer working from my weather:bit
 ```
+I created an anomometer to plug into my weather:bit by using a fan for the base that rotated very smoothly.  Originally I attempted to have the weather:bit read the output voltage of the fan and calculate windspeed but the weather:bit needed a tachometer reading in order to calculate windspeed.  You can see in the pictures I used a reid switch and a magnet to make a tachometer from the rotations of the anomometer.   Here are a few photos of my anemometer working from my weather:bit
 
-![Anomometer](IMAGES/Anomometer.jpg)
+
+![Anomometer](IMAGES/Anomometer.jpg "Anomometer with Reid Switch")
