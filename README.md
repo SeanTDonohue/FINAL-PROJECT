@@ -101,3 +101,5 @@ I created an anomometer to plug into my weather:bit by using a fan for the base 
 
 
 ![Anomometer](IMAGES/Anomometer.jpg "Anomometer with Reid Switch")
+
+![AnomometerSpinning](IMAGES/Spinning_Anomometer.jpg "Spinning")
