@@ -2,9 +2,12 @@
 ### ETR 107 Final Project
 #### Weatherbit for Microbit
 This is a project that I thouroghly enjoyed.  I wanted to create a interface from my computer using tkinter and allow communication to the weather;bit extension on my microbit.
-The measurements I am taking is for Windspeed, Temperature, Barometric Pressure, Humidity, Sunlight Level, and altitude.  The following is my Python code for the serial interface to the microbit/weatherbit extension.
+The measurements I am taking is for Windspeed, Temperature, Barometric Pressure, Humidity, Sunlight Level, and altitude.  
  
 ![Weatherbit](IMAGES/Weatherbit.jpg "Microbit with Weatherbit Extension")
+
+The following code is the Python serial interface to the microbit and weatherbit. 
+
 
    ```# Python serial interface to a micro:bit
    
@@ -66,7 +69,7 @@ The measurements I am taking is for Windspeed, Temperature, Barometric Pressure,
    root.mainloop()
    ```
    
-In order to call specifc sensors, I created a command and a math equation to convert them to metric and standard outputs depending on the sensor.  To start the weather bit monitoring you need to use the command weatherbit.start_weather_monitoring().  The following is the code I used to send the sensor data to the serial output.  
+In order to call specifc sensors, I created a command and a math equation to convert them to metric and standard outputs depending on the sensor.  To start the weather bit monitoring you need to use the command weatherbit.start_weather_monitoring().  The following is my Python code for the serial interface to the microbit/weatherbit extension.  
    
    ```def on_data_received():
     global cmd
